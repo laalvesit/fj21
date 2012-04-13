@@ -14,7 +14,6 @@
 	<jsp:useBean id="dao" class="br.com.caelum.jdbc.dao.ContatoDAO" />
 	
 	<table>
-		Nome - E-mail - Endereço - Data Nascimento
 		<c:forEach var="contato" items="${ dao.lista }">
 			<tr>
 				<td>${ contato.nome }</td>
