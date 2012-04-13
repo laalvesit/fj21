@@ -1,0 +1,18 @@
+package br.com.caelum.servlet;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+
+public class Contador extends HttpServlet {
+	public void init(ServletConfig config) throws ServletException {
+		super.init(config);
+		
+		log("Iniciando o Contador!");
+	}
+	public void destroy() {
+		super.destroy();
+		
+		log("Finalizando o Contador!");
+	}
+}
